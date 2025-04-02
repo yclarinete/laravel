@@ -5,7 +5,7 @@
     <div class="register-container">
       <h2 class="text-center">Registro</h2>
       <form action="{{route ('registro')}}" method="POST">
-        @csrf
+        @csrfphp
         <div class="mb-3">
           <label for="nome" class="form-label">Nome Completo</label>
           <input type="text" class="form-control" id="nome" name="nome_completo" placeholder="Digite seu nome completo" required>
@@ -26,5 +26,4 @@
       </form>
     </div>
 
-    
 @endsection
